@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-2b</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            border: bold black 3px;
+            width: 300px;
+            height: 400px;
+            align-content: flex-end ;
+            
+        }
+        .col{
+            display:  flex;
+            flex-direction: column-reverse;
+            width: 25%;
+            height: 100%;
+            
+        }
+        .top{
+            background-color: rgb(67, 137, 67);
+        }
+        .bottom{
+            background-color: yellow;
+        }
+    
+        .col1_1{
+            height: 25%;
+        }
+        .col1_2{
+            height: 20%;
+        }
+
+        .col2_1{
+            height: 45%;
+        }
+        .col2_2{
+            height: 40%;
+        }
+
+        .col3_1{
+            height: 15%;
+        }
+        .col3_2{
+            height: 50%;
+        }
+
+        .col4_1{
+            height: 30%;
+        }
+        .col4_2{
+            height: 40%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="col col1">
+        <div class="top col1_1">25%</div>
+        <div class="bottom col1_2">20%</div>
+    </div>
+
+    <div class="col col2">
+        <div class="top col2_1">45%</div>
+        <div class="bottom col2_2">40%</div>
+    </div>
+
+    <div class="col col3">
+        <div class="top col3_1">15%</div>
+        <div class="bottom col3_2">50%</div>
+    </div>
+
+    <div class="col col4">
+        <div class="top col4_1">30%</div>
+        <div class="bottom col4_2">40%</div>
+    </div>
+
+    </div>
+
+</body>
+</html>

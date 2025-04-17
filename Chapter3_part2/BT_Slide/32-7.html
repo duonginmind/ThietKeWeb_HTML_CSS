@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-7</title>
+    <style>
+        .header {
+            background-color: orangered;
+            color: white;
+            display: grid;
+            grid-template-columns: auto auto; /* Chia header thành 2 phần */
+            padding: 10px;
+        }
+
+        .left-sidebar, .right-sidebar {
+            display: flex;
+            gap: 15px; /* Khoảng cách giữa các phần tử con */
+        }
+
+        .right-sidebar {
+            justify-content: end; 
+        }
+        .box-input{
+            display: flex;
+            justify-content: center;
+            background-color: gray;
+            padding: 50px;
+        }
+        form{
+            background-color: white;
+            padding: 30px;
+            width: 500px;
+        }
+        input{
+            float: right;
+            width: 80%;
+        }
+        .sidebar {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            gap: 10px;
+            width: 100%; 
+            word-wrap: break-word; /*tỷ lệ là dùng để ngẮT CHỮ AUTO THÌ KH CẦN*/
+        }
+        .feature{
+            background-color: gray;
+            display: flex;
+            gap: 30px;
+        }
+        .feature1{
+            background-color: aquamarine;
+            padding: 20px;
+            margin: 40px;
+        }
+        .feature2{
+            background-color: rgb(175, 154, 115);
+            padding: 20px;
+            margin: 40px;
+        }
+        .feature3{
+            background-color: plum;
+            padding: 20px;
+            margin: 40px;
+        }
+        .number{
+            display: grid;
+            grid-template-columns: repeat(5,auto);
+            gap: 50px;
+            width: 100%;
+            justify-items: center;
+            
+        }
+        .number-box{
+            display: grid;
+            align-content: center;
+            background-color: red;
+            padding: 20x;
+            color: white;
+            margin: 20px;
+            text-align: center;
+            height: 30pt;
+            width: 50px;
+        }
+        .center-item{
+            background-color: gray;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center-item1{
+            background-color: aquamarine;
+            padding: 30px;
+            height: 20vh;
+            width: 30%;
+            align-content: center;
+            text-align: center;
+        }
+        .chart{
+            display: grid;
+            grid-template-columns: repeat(12,auto);
+            gap: 30px;
+            height: 200px;
+            align-items: end;
+        }
+        .col{background-color: orangered;
+            text-align: center;
+        width: 40px;}
+        .chart-1, .chart-7{
+            height: 10%;
+        }
+        .chart-2, .chart-8{
+            height: 20%;
+        }
+        .chart-3, .chart-6{
+            height: 40%;
+        }
+        .chart-4 {height: 90%;}
+        .chart-5, .chart-12{height: 80%}
+        .chart-9 {height:69%}
+        .chart-10 {height:96%}
+
+    
+        
+    
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left-sidebar">
+            <div >GIỚI THIỆU</div>
+            <div >Kết nối</div>
+            <div >Tải ứng dụng</div>
+        </div>
+
+        <div class="right-sidebar">
+            <div >Đăng ký</div>
+            <div >Đăng nhập</div>
+        </div>
+        
+    </div>
+
+    <div class="box-input">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text"><br><br>
+            <label for="name">Password:</label>
+            <input type="password">
+        </form>
+    </div>
+
+    <div class="sidebar">
+        <div class="sidebar1">
+            <h3>Siderbar one</h3>
+            <div>I'm writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+                company for a long time, I would like to  apply today as a Sampie position in pernament employment </div>   
+        </div>
+
+        <div class="Main-column">
+            <h3>Main column</h3>
+            <div>
+                I'am nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+                nnnnnnnnnnnnnnhfaf
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+                mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
+                snvjksnddddddddddddddddddddddddddddddddddddddddddddd
+            </div>
+        </div>
+
+        <div class="sidebar2">
+            <h3>Sidebar two</h3>
+            <div>
+                acnslincalwkkkkkkkkkkkkkkkkd
+                dassssssssssssssssssssssssssssss
+                ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+            </div>
+        </div>
+    </div><b></b>
+
+    <div class="feature">
+        <div class="feature1">
+            <h3>Feature 1</h3>
+            <div>
+                m writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+                company for a long time, I
+            </div>
+        </div>
+
+        <div class="feature2">
+            <h3>Feature 2</h3>
+            <div>
+                m writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+                company for a long time, I
+            </div>
+        </div>
+
+        <div class="feature3">
+            <h3>Feature 3</h3>
+            <div>
+                m writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+                company for a long time, I
+            </div>
+        </div>
+    </div>
+
+    <div class="number">
+        <div class="number-box">1</div>
+        <div class="number-box">2</div>
+        <div class="number-box">3</div>
+        <div class="number-box">4</div>
+        <div class="number-box">5</div>
+    </div>
+
+    <div class="center-item">
+        <div class="center-item1">Center item</div>
+    </div>
+
+    <div class="chart">
+        <div class=" col chart-1">10%</div>
+        <div class=" col chart-2">20%</div>
+        <div class=" col chart-3">40%</div>
+        <div class=" col chart-4">90%</div>
+        <div class=" col chart-5">80%</div>
+        <div class=" col chart-6">40%</div>
+        <div class=" col chart-7">10%</div>
+        <div class=" col chart-8">20%</div>
+        <div class=" col chart-9">69%</div>
+        <div class=" col chart-10">96%</div>
+        <div class=" col chart-11">60%</div>
+        <div class=" col chart-12">80%</div>
+    </div>
+
+    <div class="last">
+        <div class="box1">
+            m writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+            company for a long time, I
+        </div>
+
+        <div class="box2">
+            m writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+            company for a long time, I
+        </div>
+
+        <div class="box3">
+            m writing to u in reference to the job position adverfied mycv in which immeidataly appearies to me. Since I've been interested in your
+            company for a long time, I
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>33-14</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 16pt;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .header{
+            display: grid;
+            border-bottom: gray 1px bold;
+        }
+        .search{
+            grid-column: 3/7;
+            display: flex;
+        }
+        input{width: 80%}
+        .nut{width:20%; background-color: blue}
+        .button{
+            grid-column: 11/12;
+            align-content: flex-end
+        }
+        .menu{
+            margin: 20px;
+            display: flex;
+            color: gray;
+            gap: 20px;
+        }
+        .img_head{
+            height: 30vh;
+            background-color: blue;
+            padding: 20px;
+            color: white;
+        }
+        .img_head p {
+            color: lightgray
+        }
+        #mot {
+            background-color: transparent;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid white ;
+        }
+        #hai{
+            background-color: white;
+            color: blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .img_product{
+            display: flex;
+            flex-basis: 25%;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        img{
+            width: 200px;
+        }
+        .box{
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid gray;
+            border-radius: 5px;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search">
+                <input placeholder="Search">
+                <button class="nut"></button>
+            </div>
+
+            <div class="button">
+                <button>Sign in</button>
+                <button>Wish list</button>
+                <button>My card</button>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <div>Home</div>
+            <div>Categories</div>
+            <div>Hot Offers</div>
+            <div>Gift boxes</div>
+            <div>Projects</div>
+        </div><br><br>
+
+        <div class="img_head">
+            <div class="intro">
+                <h1>Best products & </h1>
+                <h1>brands in our store</h1>
+                <p>trendy products, Factory Prices, Excellent Service</p>
+                <button id="mot">LEARN MORE</button>
+                <button id="hai">PURCHASE NOW</button>
+            </div>
+        </div>
+
+        <h3>New product</h3>
+
+        <div class="img_product">
+            <div class="box">
+                <img src="/images/SamSungGalaxy20a.png">
+            </div>
+            <div class="box">
+                <img src="/images/SamSungGalaxy20a.png">
+            </div>
+            <div class="box">
+                <img src="/images/SamSungGalaxy20a.png">
+            </div>
+            <div class="box">
+                <img src="/images/SamSungGalaxy20a.png">
+            </div>
+        </div>
+
+
+    </div>
+</body></html>
+
+

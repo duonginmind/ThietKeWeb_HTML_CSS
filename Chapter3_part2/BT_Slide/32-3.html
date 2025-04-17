@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-3</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            text-align: center;
+            padding: 10px;
+        }
+        .item{
+            padding: 10px;
+        }
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            .container{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .container{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class=" item">Home</div>
+        <div class=" item">About</div>
+        <div class=" item">Products</div>
+        <div class=" item">Contact</div>
+    </div>
+</body>
+</html>
+
+

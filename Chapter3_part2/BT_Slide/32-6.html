@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-6</title>
+    <style>
+        img{
+            height: 300px;
+            width: 100%;
+        }
+        .header{
+            background-color: rgb(18, 18, 73);
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(6, auto);
+            padding: 20px;
+        }
+        button{
+            color: white; background-color:blue; padding: 10px;
+            border-radius: 5px;
+            border-color: blue;
+        }
+        .button{
+            border: solid 1px;
+            border-color: gray;
+            width: 300px;
+            display: flex;
+            border-radius: 5px;
+        }
+        .menu{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(2, auto);
+            gap: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div >Home</div>
+        <div >culinary</div>
+        <div >Menu</div>
+        <div >Contact Us</div>
+    </div><br>
+
+    <div class="button">
+        <input type="text" placeholder="Enter text here" style="border: none; 
+        flex: 100%">
+        <button>Search</button>
+    </div><br>
+
+    <div class="menu">
+        <div class="box">
+            <img src="/images/hanoi.jpg">
+        </div>
+        <div class="box">
+            <img src="/images/hanoi.jpg">
+        </div>
+        <div class="box">
+            <img src="/images/hanoi.jpg">
+        </div>
+        <div class="box">
+            <img src="/images/hanoi.jpg">
+        </div>
+        <div class="box">
+            <img src="/images/hanoi.jpg">
+        </div>
+        <div class="box">
+            <img src="/images/hanoi.jpg">
+        </div>
+    </div>
+
+</body>
+</html>

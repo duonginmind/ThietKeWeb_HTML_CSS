@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33-5</title>
+    <style>
+        button{
+            background-color: blue;
+            color:white; 
+            padding: 10px; 
+            border-radius:10px; 
+            border: none;
+            padding-left: 10px;
+        }
+        .header{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+        .header-item1{
+            grid-column: 1/4;
+        }
+        .header-item2{
+            grid-column: 9/10;
+        }
+        .header-item3{
+            color: grey;
+            grid-column: 10/11;
+        }
+        .header-item4{
+            grid-column: 11/12;
+            color: grey;
+        }
+        .header-item5{
+            grid-column: 12/13;
+            color: grey;
+        }
+        .content{
+            display: grid;
+            margin: 30px;
+            gap: 10px;
+            grid-template-rows: auto auto auto; /*= repeat(3, 1fr)*/
+        }
+        .content-item1{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+        }
+        .content-item1-1{
+            grid-column: 1/2;
+            background-color: rgb(203, 202, 202);
+            padding: 80px;
+            font-size: 50px;
+            text-align: center;
+        }
+        .content-item1-2{
+            grid-column: 2/3;
+            padding: 20px;
+        }
+        .content-item2{
+            background-color: grey;
+            padding: 50px;
+            color: white;
+            text-align: center;
+        }
+        .content-item3{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .box1{
+            grid-template-columns: 1/2;
+        }
+        .box2{
+            grid-template-columns: 2/3;
+        }
+        .box3{
+            grid-template-columns: 3/4;
+        }
+        .content-item3-1{
+            border: 1px solid lightgrey ;
+            display:grid;
+            grid-template-rows: auto auto;
+      
+        }
+        .item3-letter{
+            display: grid;
+            grid-row: 1/2;
+            padding: 20px;
+            height: 80%;
+        }
+        .item3-button{
+            display: grid;
+            display: flex;
+            grid-row: 2/3;
+            justify-content: flex-start;
+            background-color: lightgrey;
+            
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <div class="header">
+            <div class="header-item1">Start Bootstap</div>
+            <div class="header-item2">Home</div>
+            <div class="header-item3">About</div>
+            <div class="header-item4">Contact</div>
+            <div class="header-item5">Services</div>
+        </div>
+
+        <div class="content">
+            <div class="content-item1">
+                <div class="content-item1-1">900 X 400</div>
+                <div class="content-item1-2">
+                    <h2>Business Name or Tagline</h2>
+                    <div>This is template that is great for small bussiness. It doesn't have too much fancy
+                        flare to it, but it makea a great use of the standard Bootstrap core components.
+                        Feel free to uae this tamplate for any project you want!
+                    </div><br>
+                    <button>Call to Action!</button>
+                </div>
+            </div>
+
+            <div class="content-item2">
+                <div>This call to action card is a great place to showcase some important information
+                    or display a clever tagline!
+                </div>
+            </div>
+
+            <div class="content-item3">
+                <div class="content-item3-1">
+                    <div class="item3-letter">
+                        <h3>Card One</h3>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus
+                            at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore 
+                            voluptates quos eligendi labore.
+                        </div>
+                    </div>
+                    <div class="item3-button" style="background-color:lightgrey">
+                        <button>More Info</button>
+                    </div>
+                    
+                </div>
+
+                <div class="content-item3-1 ">
+                    <div class="item3-letter">
+                        <h3>Card Two</h3>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus
+                            at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore 
+                            voluptates quos eligendi labore.
+                        </div>
+                    </div>
+                    <div class="item3-button"><button>More Info</button></div>
+                </div>
+
+                <div class="content-item3-1">
+                    <div class="item3-letter">
+                        <h3>Card Three</h3>
+                        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem margin quas ex
+                            numquam, maxime minus quam molestias corporis quod, ea minima accusamus.
+                        </div>
+                    </div>
+                    <div class="item3-button"><button>More Info</button></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>Copyright © Your Website 2023</div>
+        </div>
+
+    </div>
+</body>
+</html>

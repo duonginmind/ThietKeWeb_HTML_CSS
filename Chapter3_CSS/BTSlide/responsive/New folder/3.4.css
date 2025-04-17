@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding:20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: left;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+}

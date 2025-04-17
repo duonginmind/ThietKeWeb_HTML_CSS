@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+header {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin : 0 auto;
+    font-size: 1.5rem
+}
+
+.rating {
+    font-size: 15px;
+    display: flex; /*các phtu con nằm  bên trong dễ chỉnh*/
+    align-items: center;
+    margin-bottom: 10px;    
+}
+
+.star{
+    margin-left: 5px;
+    color: #FFD700;
+}
+.letter {
+    color: grey;
+}
+.price{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+}
+.discount{
+    background-color: rgb(236, 232, 232);
+    border-radius: 15px;
+    padding: 2px;
+    font-size: 15px;
+}
+.color-options {
+    margin-top: 15px;
+}
+
+.color-option {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color-option:hover {
+    border-color: #000; 
+}

@@ -1,0 +1,126 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>32-1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid white;
+            margin: auto;
+            background-color: rgb(34, 130, 98);
+            padding: 10px;
+            color: white;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 98%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px;
+            align-self: flex-start;
+        }
+
+        form {
+            border: 1px solid white;
+            padding: 10px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width:1023px) {
+            .container {
+                background-color: blueviolet;
+            }
+
+            .box {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            label {
+                margin-bottom: 0;
+                width: 30%;
+            }
+
+            input {
+                width: 70%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            .container {
+                background-color: blue;
+            }
+
+            .box {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            label {
+                margin-bottom: 0;
+                width: 30%;
+            }
+
+            input {
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="box box1">
+                <label id="name">Họ tên</label>
+                <input type="text" id="name" Họ tên>
+            </div>
+
+            <div class="box box2">
+                <label id="birthday">Ngày sinh</label>
+                <input type="date" id="birthday">
+            </div>
+
+            <div class="box box3">
+                <label id="email">Email</label>
+                <input id="email">
+            </div>
+
+            <div class="box box4">
+                <label id="sdt">SĐT</label>
+                <input id="sdt">
+            </div>
+
+            <div class="box5">
+                <button type="submit">Đăng ký</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+

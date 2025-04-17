@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33-3</title>
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        .container{
+            text-align: center;
+            display: grid;
+            grid-template-columns: auto  auto auto;
+            grid-template-rows: auto auto auto;
+            gap: 10px
+
+        }
+        .item{
+           background-color: rgb(213, 213, 213);
+           padding: 20px;
+        }
+        .item1{
+            grid-column: 1/4;
+        }
+        footer{
+            grid-column: 1/4;
+            padding: 50px;
+
+        }
+        i{
+            background-color: rgb(20, 20, 222);
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">
+            <h1>A warm welcome!</h1>
+            <div>Bootstrap utiity classes are used to create this jumbotron since the old component has been removed
+                from them framework. Why create custom CSS when you can use ultities?
+            </div><br>
+            <button style="background-color:blue; color:white;
+            border-radius: 5px;padding: 10px; border:0cap">Call to action</button>
+        </div>
+
+        <div class="item item2">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Fresh new layout</h2>
+            <div>With Bootstrap 5, we've created a fresh new layout for this temple!</div>
+        </div>
+
+        <div class="item item3">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+            <h2>Free to download</h2>
+            <div>As always, Start Bootstrap has a powerful collection of free templates.</div>
+        </div>
+
+        <div class="item item4">
+            <i class="fa-solid fa-file-lines"></i>
+            <h2>jumbotron hero header</h2>
+            <div>The heroic part of this template is the jumbotron hero header!</div>
+        </div>
+
+        <div class="item item5">
+            <i class="fa-solid fa-box-open"></i>
+            <h2>Feature boxes</h2>
+            <div>We've created some custom feature boxes using Bootstrap icons!</div>
+        </div>
+
+        <div class="item item6">
+            <i class="fa-solid fa-code"></i>
+            <h2>Simple clean code</h2>
+            <div>We keep our dependencies up to date and squash bugs as they come!</div>
+        </div>
+
+        <div class="item item7">
+            <i class="fa-solid fa-check"></i>
+            <h2>A name you trust</h2>
+            <div>Start Bootstrap has been the leader in free Bootstrap templates since 2013!</div>
+        </div>
+        <footer style="background-color: black;color:white">
+            <div>Copyright © Your Website 2023</div>
+        </footer>
+    </div>
+
+</body>
+</html>
