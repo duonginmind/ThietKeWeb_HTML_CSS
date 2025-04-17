@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with Top and Bottom Borders</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Phần nền xanh */
+        .top-section {
+            background-color: #00c0d9;
+            padding: 40px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Phần nền xám */
+        .bottom-section {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* Chứa các thẻ trắng */
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: -30px auto 0 auto; /* Đẩy thẻ vào giữa viền xanh và xám */
+            padding: 20px;
+        }
+
+        /* Thẻ trắng (card) */
+        .card {
+            background-color: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .icon {
+            color: #9ecb2d;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Phần nền xanh -->
+    <div class="top-section">
+        <h1>Hello, we have brought together the best quality services, offers, projects for you!</h1>
+    </div>
+
+    <!-- Thẻ trắng giữa -->
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="icon">&#128421;</div> <!-- Monitor Icon -->
+            <h3>Outstanding design</h3>
+            <p>Designed to be flexible according to all your needs. Create your site with all module position.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="icon">&#128241;</div> <!-- Mobile Icon -->
+            <h3>Responsive Layout</h3>
+            <p>Genius template can be easily viewed on any mobile device. Smoothly responsive.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="icon">&#9881;&#128190;</div> <!-- Gear and Data Icon -->
+            <h3>Easy to use</h3>
+            <p>The modules we have prepared are simple to use. No code information is needed.</p>
+        </div>
+    </div>
+
+    <!-- Phần nền xám -->
+    <div class="bottom-section">
+        <!-- Nội dung có thể thêm vào đây -->
+    </div>
+</body>
+</html>
