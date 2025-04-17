@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+    <script>
+        function showMessage() {
+            document.getElementById('mouse').innerText="Bạn vừa di chuột vào đoạn văn!";
+        }
+        function hideMessage() {
+            document.getElementById('mouse').innerText="Bạn vừa di chuột vào đoạn văn!";
+        }
+    </script>
+</head>
+<body>
+    <h1>Di chuột vào đoạn văn</h1>
+    <p onmouseenter="showMessage()" onmouseout="hideMessage()">
+        Đây là một đoạn văn. Hãy thử di chuột vào nó!
+    </p>
+    <p id="mouse"></p>
+</body>
+</html>

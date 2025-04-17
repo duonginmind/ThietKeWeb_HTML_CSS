@@ -1,0 +1,76 @@
+------Bật tắt đèn<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <button 
+    onclick="document.getElementById('bongden').src='/images/den bat.png'">On</button>
+
+    <button 
+    onclick="document.getElementById('bongden').src='/images/den tat.png'">Off</button>
+
+    <img id="bongden" src="/images/den bat.png" style="width:100px">
+</body>
+</html>
+
+-----------------------<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+    function on_click(){
+        document.getElementsByTagName('p')[0].innerHTML='dương';
+    }
+    </script>
+</head>
+<body>
+    <button onclick="on_click()">click here</button>
+    
+    <p>dong mot</p>
+    <p>dong hai</p>
+</body>
+</html>
+
+-----------------<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function myFunction() {
+        // Lấy danh sách các phần tử <li>
+        var items = document.getElementsByTagName("LI");
+
+        // Kiểm tra nếu danh sách có đủ phần tử
+        if (items.length > 1) {
+            // Hiển thị nội dung của phần tử thứ 2
+            document.getElementById("demo").innerHTML = items[1].innerHTML;
+        } else {
+            // Thông báo nếu không đủ phần tử
+            document.getElementById("demo").innerHTML = "Không có phần tử thứ hai.";
+        }
+    }
+    </script>
+</head>
+<body>
+    <p>Thực đơn</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+    <button onclick="myFunction()">Click here</button>
+    
+    <p id="demo"></p>
+</body>
+</html>
+------------------<br>

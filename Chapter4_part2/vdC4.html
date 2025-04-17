@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bóng đèn</title>
+    <script>
+        function OnOff (isTurnOn) {
+            if (isTurnOn==true)
+                document.getElementsByTagName('img')[0].src='./../images/den bat.png'
+            else 
+                document.getElementsByTagName('img')[0].src='./../images/den tat.png'
+        }
+
+        function onMouse (isOver){
+            if (isOver==true){
+                document.getElementsByTagName('div')[0].style.textAlign='center';
+                document.getElementsByTagName('div')[0].style.cursor='pointer';
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="OnOff(true)">Turn On</button>
+    <img id="Bongden" src="./../images/den bat.png" style="width: 200px;">
+    <button onclick="OnOff(false)">Turn Off</button> -->
+
+    <button onclick="document.getElementById('Bongden').src='/img/light_on.jpg'">Bật đèn</button>
+    <button onclick="document.getElementById('Bongden').src='/img/light_off.jpg'">Tắt đèn</button>
+    <img id="Bongden" src="/img/light_off.jpg" style="width: 200px;">
+
+    <div style="text-align: right"; 
+    onmouseover="document.getElementsByTagName('div')[0].style.textAlign='center';"
+    onmouseout="document.getElementsByTagName('div')[0].style.textAlign='left';">
+        Văn bản đc canh lề</div>
+ 
+</body>
+</html>
